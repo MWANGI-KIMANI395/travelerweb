@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler</title>
+    <link rel="stylesheet"href="Traveler.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"class="logo">Traveler</a>
+        <ul class="menu">
+            <li><a href="index.html">features</a></li>
+            <li><a href="how.html">how it works</a></li>
+            <li><a href="prices.html">prices</a></li>
+            <li><a href="contacts.html">contacts</a></li>
+        </ul>
+
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+             <h1>Discover the world with us</h1>
+             <h2>Find local guides and explore hidden gems in every destination.</h2>
+            
+            <div class="search-box">
+            <input type="text"id="searchInput" placeholder="search destinations">
+            <button type="button"onclick="search()">search</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&COPY; 2024 Traveler. All rights reserved.</p>
+    </footer>
+    <script>
+        function search(){
+            let value=document.getElementById('searchInput').value;
+
+            if(value===""){
+                alert("Please enter a destination");
+            }else{
+                alert("You searched for "+value);
+            }
+        }
+    </script>
+</body>
+</html>
